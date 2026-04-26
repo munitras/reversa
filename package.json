@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Transform legacy systems into executable specifications for AI coding agents",
   "bin": {
-    "reversa": "./bin/reversa.js"
+    "reversa": "bin/reversa.js"
   },
   "type": "module",
   "keywords": [
@@ -17,11 +17,19 @@
     "cursor",
     "agents"
   ],
+  "files": [
+    "agents/",
+    "bin/",
+    "lib/",
+    "templates/",
+    "README.md",
+    "LICENSE"
+  ],
   "author": "sandeco",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sandeco/reversa.git"
+    "url": "git+https://github.com/sandeco/reversa.git"
   },
   "homepage": "https://github.com/sandeco/reversa",
   "bugs": {
