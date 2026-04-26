@@ -3,10 +3,14 @@
   "project": "",
   "user_name": "",
   "chat_language": "pt-br",
-  "doc_language": "pt-br",
+  "doc_language": "Português",
+  "answer_mode": "chat",
+  "output_folder": "_reversa_sdd",
   "phase": null,
   "completed": [],
   "pending": ["reconhecimento", "escavacao", "interpretacao", "geracao", "revisao"],
   "checkpoints": {},
+  "engines": [],
+  "agents": [],
   "created_files": []
 }

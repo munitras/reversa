@@ -24,7 +24,7 @@ Execute as tarefas do plano **sequencialmente, uma por vez**:
 
 1. Informe o usuário: "Iniciando o **[Nome do Agente]** — [o que ele fará]."
 2. Ative o skill `reversa-[agente]` correspondente. Se a engine não suportar ativação direta de skills por nome, leia `.agents/skills/reversa-[agente]/SKILL.md` na íntegra e execute no contexto atual.
-3. Após conclusão: salve checkpoint em `.reversa/state.json` (veja schema em `references/state-schema.md`) e marque a tarefa com ✅ em `.reversa/plan.md`.
+3. Após conclusão: salve checkpoint em `.reversa/state.json` seguindo `references/checkpoint-guide.md` e marque a tarefa com ✅ em `.reversa/plan.md`.
 4. Apresente resumo breve do que foi gerado.
 
 **Sobre paralelismo:** executar etapas do plano sequencialmente é orquestração normal — não requer autorização. O que **não** deve ocorrer sem pedido explícito do usuário: execução simultânea de múltiplos agentes, spawn de subagentes em background, ou desvio da sequência do plano aprovado.
