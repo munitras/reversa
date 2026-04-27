@@ -5,7 +5,7 @@ license: MIT
 compatibility: Claude Code, Codex, Cursor, Gemini CLI e demais agentes compatíveis com Agent Skills.
 metadata:
   author: sandeco
-  version: "1.0.1"
+  version: "1.1.0"
   framework: reversa
   phase: geracao
 ---
@@ -96,6 +96,27 @@ Ao concluir todos os itens, informe ao Maestro:
 
 Siga o template em `references/sdd-template.md`.
 Marque **cada afirmação** com 🟢 🟡 ou 🔴. Sem exceções.
+
+### Como preencher as seções obrigatórias
+
+**Requisitos Não Funcionais**
+Infira a partir do código — não invente. Sinais a procurar:
+- Timeouts explícitos → Performance
+- Middleware de autenticação/autorização → Segurança
+- Uso de cache, filas, workers → Escalabilidade
+- Retry logic, circuit breakers → Disponibilidade
+Se não encontrar evidência, omita a linha. Nunca preencha sem rastreabilidade.
+
+**Critérios de Aceitação**
+Derive dos Fluxos e Regras de Negócio já documentados. Para cada fluxo principal gere ao menos um cenário feliz (happy path) e um cenário de falha. Use o formato `Dado / Quando / Então` sem exceção.
+
+**Prioridade (MoSCoW)**
+Classifique cada responsabilidade do componente:
+- **Must** — está no caminho crítico ou é chamada por múltiplos outros componentes
+- **Should** — importante mas existe alternativa ou fallback
+- **Could** — acionada raramente ou apenas em casos de borda
+- **Won't** — código comentado, flags desativadas, funcionalidade deprecada
+Baseie a classificação em frequência de chamada, posição na cadeia de dependências e presença de testes.
 
 ## Saída
 
