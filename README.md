@@ -2,6 +2,8 @@
 
 **Transforme sistemas legados em especificações executáveis por agentes de IA.**
 
+[![Documentação](https://img.shields.io/badge/docs-sandeco.github.io%2Freversa-ffa203?style=for-the-badge&logo=material-for-mkdocs&logoColor=black)](https://sandeco.github.io/reversa/)
+
 O Reversa é um framework de engenharia reversa de especificações. Ele se instala dentro do seu projeto legado e coordena agentes de IA especializados para analisar o código existente e gerar especificações completas, rastreáveis e prontas para uso por qualquer agente codificador.
 
 ---
@@ -180,6 +182,14 @@ Toda afirmação nas specs é marcada com:
 | Cursor ⭐ | `.cursorrules` | `.agents/skills/reversa-*/` | `/reversa` |
 | Gemini CLI | `GEMINI.md` | `.agents/skills/reversa-*/` | `/reversa` |
 | Windsurf | `.windsurfrules` | `.agents/skills/reversa-*/` | `/reversa` |
+| Antigravity | `AGENTS.md` | `.agents/skills/reversa-*/` | `/reversa` |
+| Kiro | `.kiro/steering/reversa.md` | `.agents/skills/reversa-*/` | `/reversa` |
+| Opencode | `AGENTS.md` | `.agents/skills/reversa-*/` | `reversa` |
+| Cline | `.clinerules` | `.agents/skills/reversa-*/` | `/reversa` |
+| Roo Code | `.roorules` | `.agents/skills/reversa-*/` | `/reversa` |
+| GitHub Copilot | `.github/copilot-instructions.md` | `.agents/skills/reversa-*/` | `/reversa` |
+| Aider | `CONVENTIONS.md` | `.agents/skills/reversa-*/` | `reversa` |
+| Amazon Q Developer | `.amazonq/rules/reversa.md` | `.agents/skills/reversa-*/` | `/reversa` |
 
 ---
 

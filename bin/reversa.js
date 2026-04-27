@@ -20,7 +20,7 @@ const commands = {
   'export-diagrams':  () => import('../lib/commands/export-diagrams.js'),
 };
 
-const green = chalk.hex('#00FF00');
+const green = chalk.hex('#ffa203');
 
 if (!command || command === '--help' || command === '-h') {
   console.log(green(`

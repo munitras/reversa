@@ -1,0 +1,95 @@
+site_name: Reversa
+site_url: https://sandeco.github.io/reversa
+site_description: Transforme sistemas legados em especificações executáveis por agentes de IA.
+site_author: sandeco
+repo_url: https://github.com/sandeco/reversa
+repo_name: sandeco/reversa
+edit_uri: edit/main/docs/
+copyright: '"Reversa" by sandeco'
+
+theme:
+  name: material
+  language: pt-BR
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Mudar para modo claro
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Mudar para modo escuro
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.instant
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/magnify
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search:
+      lang: pt
+
+nav:
+  - Início: index.md
+  - Por que o Reversa: por-que-reversa.md
+  - Instalação: instalacao.md
+  - Como usar: uso.md
+  - CLI: cli.md
+  - Configuração: configuracao.md
+  - Engines suportadas: engines.md
+  - Pipeline de análise: pipeline.md
+  - Escala de confiança: escala-confianca.md
+  - Agentes:
+    - Visão geral: agentes/index.md
+    - Reversa (Orquestrador): agentes/reversa.md
+    - Scout: agentes/scout.md
+    - Arqueólogo: agentes/arqueologo.md
+    - Detetive: agentes/detetive.md
+    - Arquiteto: agentes/arquiteto.md
+    - Redator: agentes/redator.md
+    - Revisor: agentes/revisor.md
+    - Tracer: agentes/tracer.md
+    - Visor: agentes/visor.md
+    - Data Master: agentes/data-master.md
+    - Design System: agentes/design-system.md
+    - Chronicler: agentes/chronicler.md
+    - Guia com analogias: agentes/agents-help.md
+  - Saídas geradas: saidas/index.md
+  - Contribuindo: contribuindo.md
