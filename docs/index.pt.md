@@ -66,7 +66,7 @@ Pronto. O Reversa assume o volante e guia você até o fim.
 
 ## Garantia de segurança
 
-!!! warning "💾 Faça backup do projeto antes de começar"
+!!! danger "💾 Faça backup do projeto antes de começar"
     Embora o Reversa nunca modifique seus arquivos, agentes de IA podem cometer erros. **Recomendamos fortemente:**
 
     1. **Versione o projeto no Git** — confirme que todos os arquivos estão commitados antes de iniciar a análise
