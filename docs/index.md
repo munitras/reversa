@@ -66,6 +66,15 @@ That's it. Reversa takes the wheel and guides you to the end.
 
 ## Safety guarantee
 
+!!! warning "💾 Back up your project before starting"
+    Although Reversa never modifies your files, AI agents can make mistakes. **We strongly recommend:**
+
+    1. **Version the project in Git** — make sure all files are committed before starting the analysis
+    2. **Have the repository on GitHub** (or GitLab, Bitbucket) — so you have a safe remote copy
+    3. **Make a local copy of the folder** — a simple `cp -r my-project my-project-backup` protects against any unexpected event
+
+    If something unexpected happens during analysis, you can restore the original state with `git restore .` or from the backup copy.
+
 !!! warning "Reversa never touches your files"
     Agents write **only** to `.reversa/` and `_reversa_sdd/`. No file in your project is modified, deleted, or overwritten. Ever.
 

@@ -36,7 +36,9 @@ Execute as tarefas do plano **sequencialmente, uma por vez**:
 - [ ] **Archaeologist** — Análise do módulo `payments`
 ```
 
-2. Apresente ao usuário um resumo do que o Scout encontrou e pergunte o nível de documentação:
+2. **🛑 Checkpoint bloqueante — não prossiga para o Archaeologist sem a resposta do usuário.**
+
+Apresente ao usuário um resumo do que o Scout encontrou e as três opções de nível de documentação. Use exatamente este formato:
 
 > "[Nome], o Scout concluiu o mapeamento. Aqui está o que encontrei:
 > - **[N] módulos** identificados: [lista resumida]
@@ -44,13 +46,17 @@ Execute as tarefas do plano **sequencialmente, uma por vez**:
 > - **[N] integrações externas** detectadas (ou: nenhuma)
 > - **Banco de dados:** [presente/ausente]
 >
-> Com base nisso, qual nível de documentação prefere para este projeto?
+> Qual nível de documentação você quer para este projeto?
 >
 > 1. **Essencial** — artefatos principais (code-analysis, domain, architecture, specs SDD). Ideal para projetos simples.
-> 2. **Completo** — documentação completa com diagramas C4, ERD, ADRs, OpenAPI e matrizes de rastreabilidade. Padrão recomendado.
-> 3. **Detalhado** — máxima profundidade: flowcharts por função, ADRs expandidos, deployment, revisão cruzada obrigatória. Para sistemas enterprise."
+> 2. **Completo** — documentação completa com diagramas C4, ERD, ADRs, OpenAPI e matrizes de rastreabilidade. Recomendado para a maioria dos projetos.
+> 3. **Detalhado** — máxima profundidade: flowcharts por função, ADRs expandidos, deployment, revisão cruzada obrigatória. Para sistemas enterprise.
+>
+> Digite 1, 2 ou 3."
 
-Salve a escolha em `.reversa/state.json` → campo `doc_level` (`essencial`, `completo` ou `detalhado`) antes de prosseguir para o Archaeologist.
+Aguarde a resposta do usuário. Não invente padrão, não assuma valor, não prossiga sem confirmação explícita (1, 2, 3 ou o nome `essencial`/`completo`/`detalhado`).
+
+Após receber a resposta, salve em `.reversa/state.json` → campo `doc_level` e só então ative o Archaeologist.
 
 **Sobre paralelismo:** executar etapas do plano sequencialmente é orquestração normal — não requer autorização. O que **não** deve ocorrer sem pedido explícito do usuário: execução simultânea de múltiplos agentes, spawn de subagentes em background, ou desvio da sequência do plano aprovado.
 

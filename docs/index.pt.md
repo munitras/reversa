@@ -66,6 +66,15 @@ Pronto. O Reversa assume o volante e guia você até o fim.
 
 ## Garantia de segurança
 
+!!! warning "💾 Faça backup do projeto antes de começar"
+    Embora o Reversa nunca modifique seus arquivos, agentes de IA podem cometer erros. **Recomendamos fortemente:**
+
+    1. **Versione o projeto no Git** — confirme que todos os arquivos estão commitados antes de iniciar a análise
+    2. **Tenha o repositório no GitHub** (ou GitLab, Bitbucket) — para ter uma cópia remota segura
+    3. **Faça uma cópia local da pasta** — um simples `cp -r meu-projeto meu-projeto-backup` protege contra qualquer imprevisto
+
+    Se algo inesperado acontecer durante a análise, você pode restaurar o estado original com `git restore .` ou a partir da cópia de backup.
+
 !!! warning "O Reversa nunca toca nos seus arquivos"
     Os agentes escrevem **apenas** em `.reversa/` e `_reversa_sdd/`. Nenhum arquivo do seu projeto é modificado, apagado ou sobrescrito. Nunca.
 
