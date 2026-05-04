@@ -185,7 +185,7 @@ Every statement in the specs is marked with:
 | Gemini CLI | `GEMINI.md` | `.agents/skills/reversa-*/` | `/reversa` |
 | Windsurf | `.windsurfrules` | `.agents/skills/reversa-*/` | `/reversa` |
 | Antigravity | `AGENTS.md` | `.agents/skills/reversa-*/` | `/reversa` |
-| Kiro | `.kiro/steering/reversa.md` | `.agents/skills/reversa-*/` | `/reversa` |
+| Kiro | (none) | `.kiro/skills/reversa-*/` and `.agents/skills/reversa-*/` | `/reversa` |
 | Opencode | `AGENTS.md` | `.agents/skills/reversa-*/` | `reversa` |
 | Cline | `.clinerules` | `.agents/skills/reversa-*/` | `/reversa` |
 | Roo Code | `.roorules` | `.agents/skills/reversa-*/` | `/reversa` |
