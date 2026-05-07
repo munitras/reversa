@@ -4,6 +4,14 @@ Reversa tiene un CLI simple para gestionar la instalación y el ciclo de vida de
 
 ---
 
+## Comportamiento inicial
+
+Al iniciar y antes de mostrar el logo ASCII de Reversa, el CLI debe limpiar la pantalla del terminal. El logo debe aparecer en la parte superior del terminal, sin contenido anterior encima.
+
+El logo debe reservar un margen a la derecha del nombre `Reversa` y mostrar `by sandeco` en blanco, alineado en el lateral derecho del arte.
+
+---
+
 ## Comandos disponibles
 
 ### `install`

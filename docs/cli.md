@@ -4,6 +4,14 @@ Reversa has a simple CLI to manage the installation and lifecycle of agents in y
 
 ---
 
+## Initial behavior
+
+When the CLI starts and before it shows the Reversa ASCII logo, it must clear the terminal screen. The logo should appear at the top of the terminal, with no previous content above it.
+
+The logo must reserve a margin to the right of the `Reversa` name and show `by sandeco` in white, aligned on the right side of the artwork.
+
+---
+
 ## Available commands
 
 ### `install`
