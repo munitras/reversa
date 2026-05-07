@@ -48,13 +48,13 @@ Após o usuário confirmar uma pergunta de múltipla escolha, o CLI não deve im
 
 O menu de agentes lista times, não agentes individuais. O usuário escolhe na granularidade de time; o instalador expande cada time selecionado nos seus agentes:
 
-1. `Discovery Agents Core (required)`
+1. `Reversa Agents Core` (renderizado em cinza como separator, sempre instalado)
 2. `Migration Agents`
 3. `Code Forward Agents`
 4. `Translators N8N->Specs->Python`
 5. `Pricing and Size Agents`
 
-O time Discovery é travado (sempre instalado) e contém o antigo Discovery Core mais o que era Discovery Add-ons (Reviewer, Visor, Data Master, Design System, Agents Help, Reconstructor). Mesmo o menu escondendo o detalhe por agente, o resumo final da instalação continua quebrando a contagem por time (Discovery, Migration, Code Forward, Translators, Pricing).
+O `Reversa Agents Core` é renderizado como um separator cinza não selecionável que visualmente mostra `(*)` como se fosse um item marcado e desabilitado: o usuário enxerga, sabe que está incluído, e o cursor pula por cima. Ele contém todos os agentes de descoberta (Reversa, Scout, Archaeologist, Detective, Architect, Writer, Reviewer, Visor, Data Master, Design System, Agents Help, Reconstructor), então o antigo grupo "Discovery Add-ons" deixou de existir como conceito separado. Mesmo o menu escondendo o detalhe por agente, o resumo final da instalação continua quebrando a contagem por time (Discovery, Migration, Code Forward, Translators, Pricing).
 
 ---
 

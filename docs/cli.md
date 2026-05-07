@@ -48,13 +48,13 @@ After the user confirms a multi-select question, the CLI must not print every se
 
 The agents menu lists teams, not individual agents. The user picks at the team level; the installer expands each selected team into its agents:
 
-1. `Discovery Agents Core (required)`
+1. `Reversa Agents Core` (rendered in gray as a separator, always installed)
 2. `Migration Agents`
 3. `Code Forward Agents`
 4. `Translators N8N->Specs->Python`
 5. `Pricing and Size Agents`
 
-The Discovery team is locked (always installed) and contains the previous Discovery Core plus what used to be the Discovery Add-ons (Reviewer, Visor, Data Master, Design System, Agents Help, Reconstructor). Even though the menu hides the agent-level detail, the final installation summary still breaks the count down by team (Discovery, Migration, Code Forward, Translators, Pricing).
+`Reversa Agents Core` is rendered as a gray, non-selectable separator that visually shows `(*)` as if it were a checked-and-disabled item: the user sees it, knows it is included, and the cursor skips over it. It contains all discovery agents (Reversa, Scout, Archaeologist, Detective, Architect, Writer, Reviewer, Visor, Data Master, Design System, Agents Help, Reconstructor), so the previous "Discovery Add-ons" group no longer exists as a separate concept. Even though the menu hides the agent-level detail, the final installation summary still breaks the count down by team (Discovery, Migration, Code Forward, Translators, Pricing).
 
 ---
 

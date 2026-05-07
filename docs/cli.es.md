@@ -48,13 +48,13 @@ Después de que el usuario confirma una pregunta de selección múltiple, el CLI
 
 El menú de agentes lista equipos, no agentes individuales. El usuario elige a nivel de equipo; el instalador expande cada equipo seleccionado en sus agentes:
 
-1. `Discovery Agents Core (required)`
+1. `Reversa Agents Core` (renderizado en gris como separator, siempre instalado)
 2. `Migration Agents`
 3. `Code Forward Agents`
 4. `Translators N8N->Specs->Python`
 5. `Pricing and Size Agents`
 
-El equipo Discovery está bloqueado (siempre se instala) y contiene el antiguo Discovery Core más lo que antes eran los Discovery Add-ons (Reviewer, Visor, Data Master, Design System, Agents Help, Reconstructor). Aunque el menú oculta el detalle por agente, el resumen final de la instalación sigue desglosando el conteo por equipo (Discovery, Migration, Code Forward, Translators, Pricing).
+`Reversa Agents Core` se renderiza como un separator gris no seleccionable que visualmente muestra `(*)` como si fuera un ítem marcado y deshabilitado: el usuario lo ve, sabe que está incluido, y el cursor lo salta. Contiene todos los agentes de descubrimiento (Reversa, Scout, Archaeologist, Detective, Architect, Writer, Reviewer, Visor, Data Master, Design System, Agents Help, Reconstructor), por lo que el antiguo grupo "Discovery Add-ons" ya no existe como concepto separado. Aunque el menú oculta el detalle por agente, el resumen final de la instalación sigue desglosando el conteo por equipo (Discovery, Migration, Code Forward, Translators, Pricing).
 
 ---
 
