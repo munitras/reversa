@@ -51,8 +51,8 @@ The agents menu lists teams, not individual agents. The user picks at the team l
 1. `Reversa Agents Core` (rendered in gray as a separator, always installed)
 2. `Migration Agents`
 3. `Code Forward Agents`
-4. `Translators N8N->Specs->Python`
-5. `Pricing and Size Agents`
+4. `Pricing and Size Agents`
+5. `Translators N8N->Specs->Python` (unchecked by default)
 
 `Reversa Agents Core` is rendered as a gray, non-selectable separator that visually shows `(*)` as if it were a checked-and-disabled item: the user sees it, knows it is included, and the cursor skips over it. It contains all discovery agents (Reversa, Scout, Archaeologist, Detective, Architect, Writer, Reviewer, Visor, Data Master, Design System, Agents Help, Reconstructor), so the previous "Discovery Add-ons" group no longer exists as a separate concept. Even though the menu hides the agent-level detail, the final installation summary still breaks the count down by team (Discovery, Migration, Code Forward, Translators, Pricing).
 

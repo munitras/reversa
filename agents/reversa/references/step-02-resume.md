@@ -20,7 +20,7 @@ Se o estado for **em andamento** ou **pausa intra-agente pendente**, apresente a
 
 > "[Nome], encontrei uma **migração em andamento** em `<output_folder>/migration/`.
 >
-> - Concluído: <N> de 5 agentes (<lista de completedAgents>)
+> - Concluído: <N> de 6 agentes (<lista de completedAgents>)
 > - Pendente: <lista de pendingAgents>
 > - Estado atual: <currentAgent.agent ou \"aguardando aprovação humana\">
 >
